@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="480.0" prefWidth="600.0" styleClass="backgroundFull" stylesheets="@image.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controllers.LoginController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#openWindow" text="Button" />
+      <VBox fx:id="loginBox" alignment="CENTER" prefHeight="343.0" prefWidth="263.0" spacing="20.0" styleClass="frame" stylesheets="@image.css">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="37.0" prefWidth="251.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" onKeyPressed="#pressedEnter" prefHeight="25.0" prefWidth="165.0" promptText="Username" styleClass="text-field" />
+            <PasswordField fx:id="password" onKeyPressed="#pressedEnter" prefHeight="2.0" prefWidth="244.0" promptText="Password" />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#openApp" prefHeight="43.0" prefWidth="159.0" stylesheets="@image.css" text="Log in">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="93.0" prefWidth="284.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="57.0" prefWidth="124.0" spacing="3.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
+                        <Hyperlink fx:id="registerButton" onAction="#openRegisterWindow" text="Register Here" />
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot your password?" />
+                        <Hyperlink text="Recover here" />
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="15.0" right="50.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

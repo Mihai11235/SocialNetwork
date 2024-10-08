@@ -1,0 +1,43 @@
+/* Chat bubble for user input */
+.user-input {
+    -fx-background-color: #dcf8c6; /* Light green background */
+    -fx-border-color: #128c7e; /* Border color */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-padding: 8px; /* Padding */
+}
+
+/* Chat bubble for received messages */
+.other-user-bubble {
+    -fx-background-color: #e2e2e2; /* Light gray background */
+    -fx-border-color: #d9d9d9; /* Border color */
+    -fx-border-radius: 15px; /* Rounded corners */
+    -fx-padding: 8px; /* Padding */
+}
+
+/* Style the sender's name in the chat for the current user */
+.current-user-name {
+    -fx-font-weight: bold; /* Bold font for the sender's name */
+    -fx-text-fill: #128c7e; /* Text color */
+}
+
+/* Style the sender's name in the chat for other users */
+.other-user-name {
+    -fx-font-weight: bold; /* Bold font for the sender's name */
+    -fx-text-fill: #555555; /* Different Text color for other users */
+}
+
+/* Remove the border of the text area */
+.text-area {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+/* Remove the focus border */
+.text-area:focused {
+    -fx-border-color: transparent;
+}
+
+/* Remove the border of the label */
+.label {
+    -fx-background-color: transparent;
+}
