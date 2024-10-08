@@ -4,6 +4,12 @@
     -fx-background-size: cover;
 }
 
+.backgroundHome{
+    -fx-background-image:url('image/home.jpg');
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
 .backgroundLogin{
     -fx-background-image:url('image/login1.png');
     -fx-border-radius: 15px;
